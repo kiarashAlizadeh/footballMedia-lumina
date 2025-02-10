@@ -1,0 +1,134 @@
+/* CSS for Predict Page */
+
+.container {
+  margin: 40px auto;
+  width: fit-content;
+  position: relative;
+}
+
+.imageContainer {
+  border-radius: 30px;
+  width: 750px;
+  z-index: 1;
+}
+
+.content {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.upComingMatch {
+  color: #ffa500;
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+  padding: 5px 0px;
+  margin-bottom: 30px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.teams {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.teams img {
+  width: 150px;
+  height: 150px;
+}
+
+.teams span {
+  color: #ffa500;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.predictions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.predictions div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0px 35px;
+}
+
+.predictions div input {
+  color: #ffa500;
+  width: 75px;
+  padding: 15px 15px;
+  outline: none;
+  font-size: 1.4rem;
+  background: rgba(255, 255, 255, 0.71);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.predictions div input:focus {
+  border: 2px dashed #ffa500;
+}
+
+.predictBtn {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  background: #ffa500;
+  z-index: 1;
+}
+
+.predictBtn:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.predictBtn:after {
+  border-radius: 5px;
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background-color: #e2ed80;
+  right: 0;
+}
+
+.predictBtn:active {
+  top: 2px;
+}

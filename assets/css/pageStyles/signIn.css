@@ -1,0 +1,121 @@
+/* CSS for SignIn Page */
+
+/* SignIn Form */
+.container {
+  position: relative;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.background img {
+  width: 700px;
+  z-index: 1;
+  border-radius: 30px;
+}
+
+main .formContainer {
+  z-index: 3;
+  position: absolute;
+  top: 5%;
+  right: 25%;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: 80px auto;
+  background-color: #fc4508aa;
+  color: white;
+  padding: 30px 50px;
+  border-radius: 20px;
+}
+
+.formContainer h3 {
+  user-select: none;
+  margin-bottom: 10px;
+  font-size: 3rem;
+  text-shadow: 4px 6px 7px rgba(0, 0, 0, 0.372);
+  color: rgb(255, 255, 255);
+}
+
+main input {
+  color: rgb(106, 106, 106);
+  width: 90%;
+  padding: 12px 6px;
+  border-radius: 12px;
+  box-shadow: rgba(255, 255, 255, 0.424) 0px 3px 8px;
+  border: 2px solid transparent;
+  font-size: 1rem;
+}
+
+main input:focus {
+  border: 2px dashed #fc4308;
+  outline: none;
+}
+
+/*SignIn Btn Styles*/
+.signInBtn {
+  user-select: none;
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid #fc4308;
+  color: #fc4308;
+  font-size: 1rem;
+}
+
+.signInBtn:hover {
+  color: #fff;
+}
+
+.signInBtn:hover:after {
+  width: 100%;
+}
+
+.signInBtn:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #fc4308;
+}
+
+main .dontHaveAccount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  font-size: 1rem;
+  user-select: none;
+}
+
+main .dontHaveAccount a {
+  color: white;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+main .dontHaveAccount a:hover {
+  opacity: 60%;
+  transition: all 0.2s ease;
+}

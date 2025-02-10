@@ -1,0 +1,509 @@
+/* CSS for Search Page */
+
+.container {
+  margin: 40px auto;
+  max-width: 700px;
+  min-height: 500px;
+  background: rgba(255, 255, 255, 0.21);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 35px;
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+#searchTypeInput {
+  padding: 12px 6px;
+  border-radius: 12px;
+  box-shadow: rgba(255, 255, 255, 0.424) 0px 3px 8px;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  color: rgb(106, 106, 106);
+}
+
+#searchInput {
+  width: 250px;
+  padding: 12px 6px;
+  border-radius: 12px;
+  box-shadow: rgba(255, 255, 255, 0.424) 0px 3px 8px;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  color: rgb(106, 106, 106);
+}
+
+#searchInput:focus {
+  border: 2px dashed #fc4308;
+  outline: none;
+}
+
+/* searchBtn Styles */
+.searchBtn {
+  user-select: none;
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border: 1px solid #fc4308;
+  color: white;
+  background: transparent;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.searchBtn:hover:after {
+  top: 0;
+  left: 0;
+}
+
+.searchBtn:after {
+  content: '';
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 5px;
+  left: 5px;
+  transition: 0.2s;
+  background-color: #fc4508d1;
+  border-radius: 10px;
+}
+
+#dataContainer {
+  margin-top: 24px;
+  display: block;
+  width: 100%;
+}
+
+#dataContainer .foundUser {
+  display: block;
+  padding: 16px 24px;
+  background: white;
+  border-radius: 18px;
+  width: 100%;
+  margin-top: 12px;
+}
+#dataContainer .foundUser:hover {
+  background: rgba(255, 255, 255, 0.629);
+}
+
+#dataContainer .foundUser .details {
+  display: flex;
+  width: fit-content;
+  color: black;
+}
+
+#dataContainer .foundUser .details .profileImage {
+  width: 75px;
+}
+
+#dataContainer .foundUser .userDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+#dataContainer .foundUser .userDetails .detailName {
+  font-weight: bold;
+  margin: 0px;
+}
+
+#dataContainer .foundUser .userDetails .detailId {
+  font-size: 0.8rem;
+  opacity: 70%;
+}
+
+#dataContainer .foundUser .stats {
+  display: flex;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  gap: 20px;
+}
+
+#dataContainer .foundUser .favoriteTeam {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#dataContainer .foundUser .favoriteTeam img {
+  width: 75px;
+  height: 75px;
+}
+#dataContainer .foundUser .profileBio {
+  margin-left: 12px;
+}
+
+.searchActive {
+  background: red;
+  display: inline;
+  border-radius: 4px;
+  height: fit-content;
+  width: fit-content;
+}
+
+/* Tweet Section */
+.tweets {
+  width: 700px;
+  height: 305px;
+  background: rgba(19, 55, 21, 0.22);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.tweets .tweetName {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: start;
+}
+
+.tweets .tweetName img {
+  width: 50px;
+  height: 50px;
+  margin-left: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.tweets .tweetName .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+.tweets .tweetName .text .name {
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.tweets .tweetName .text .id {
+  margin-top: -5px;
+  font-size: 0.9rem;
+}
+
+.tweeting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.tweeting textarea {
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 5px;
+  opacity: 85%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #000;
+  outline: none;
+  padding: 20px;
+  font-size: 1.1rem;
+  font-family: 'Poppins';
+  resize: none;
+}
+
+.tweeting textarea::placeholder {
+  color: white;
+  opacity: 90%;
+  font-size: 1.1rem;
+}
+
+.tweeting button {
+  min-width: 100px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 20px;
+  border: 2px solid #57cc99;
+  background: #57cc99;
+}
+
+.tweeting button:hover {
+  background: #fff;
+  color: #57cc99;
+}
+
+/* User Tweet Section */
+.userTweet {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px;
+  background: rgba(3, 49, 28, 0.749);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11px);
+  -webkit-backdrop-filter: blur(11px);
+  border: 1px solid rgba(252, 67, 8, 0.2);
+}
+
+.userTweet .userInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.userTweet .userInfo .tweetDelete {
+  background: transparent;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+
+.userTweet .userInfo .tweetDelete:hover {
+  color: rgb(255, 42, 42);
+}
+
+.userTweet .userInfo .userInfoLink {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.userTweet .userInfo .userInfoLink img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.userTweet .userInfo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.userTweet .userInfo .userInfoLink .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  color: var(--text-secondary);
+}
+
+.userTweet .userInfo .userInfoLink .text .name {
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.userTweet .userInfo .userInfoLink .text .id {
+  margin-top: -5px;
+  font-size: 0.9rem;
+}
+
+.userTweet .userLastTweet {
+  width: 550px;
+  margin-top: 25px;
+  background-color: #0d210c2c;
+  color: var(--text-secondary);
+  border-radius: 10px;
+  max-width: fit-content;
+  padding: 10px;
+}
+
+.userTweet .userIntract {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.userTweet .userIntract div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.userTweet .userIntract .likes {
+  color: var(--text-secondary);
+}
+
+.userTweet .userIntract .comments {
+  margin-left: 20px;
+  color: var(--text-secondary);
+}
+
+.userTweet .userIntract .likes,
+.userTweet .userIntract .comments {
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 900;
+  padding: 0;
+  cursor: pointer;
+}
+
+.userIntract .likes i {
+  color: rgb(193, 2, 2);
+}
+
+.userTweet .userIntract .time {
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+/* Comments Section */
+.userComments {
+  background: rgba(61, 81, 56, 0.38);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(180, 163, 163, 0.1);
+  backdrop-filter: blur(11px);
+  -webkit-backdrop-filter: blur(11px);
+  border: 1px solid rgba(195, 167, 28, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 700px;
+  padding: 30px;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+}
+
+.userInfo input {
+  width: 450px;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 16px;
+  padding-left: 50px;
+  padding-right: 5px;
+  background: url('../images/profile.png') no-repeat left center;
+  background-size: 50px;
+  position: relative;
+  background-color: #ffffff33;
+  color: var(--text-secondary);
+  backdrop-filter: blur(11px);
+  -webkit-backdrop-filter: blur(11px);
+}
+
+.userInfo input::placeholder {
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #afabab;
+  color: var(--text-secondary);
+}
+
+.commentsSection {
+  margin-top: 70px;
+}
+
+.commentsSection h4 {
+  max-width: fit-content;
+  background-color: rgb(17, 60, 16);
+  border-radius: 5px;
+  padding: 2px 7px;
+}
+
+.commentsSection .comment {
+  display: flex;
+  flex-direction: column;
+  border-top: 3px solid rgb(23, 58, 0);
+  margin-top: 20px;
+}
+
+.commentsSection .comment .userInfo {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.othersComment {
+  display: flex;
+  justify-content: space-between;
+}
+
+.commentsSection .comment p {
+  background-color: rgba(80, 144, 69, 0.933);
+  color: #ece6e6;
+  width: 400px;
+  border-radius: 5px;
+  margin-top: 10px;
+  max-width: fit-content;
+  overflow: auto;
+  padding: 1px 10px;
+}
+
+.othersComment button {
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 900;
+  padding: 0;
+  cursor: pointer;
+  color: white;
+}
+
+.othersComment button i {
+  color: red;
+}
+
+#comment {
+  margin-top: 30px;
+}
+
+.commentBtn {
+  min-width: 100px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 20px;
+  border: 2px solid #57cc99;
+  background: #57cc99;
+}
+
+.commentBtn:hover {
+  background: #fff;
+  color: #57cc99;
+}

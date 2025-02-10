@@ -1,0 +1,275 @@
+/* tailwind css config */
+@import 'tailwindcss';
+
+/* Main Styles */
+
+/* Poppins Font From Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Colors */
+:root {
+  --text-main: #fc4308;
+  --text-main2: #215d3e;
+  --text-secondary: white;
+}
+
+/* Css Reset */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 16px;
+  background: linear-gradient(
+    243deg,
+    rgba(13, 30, 32, 1) 5%,
+    rgba(49, 62, 42, 1) 23%,
+    rgba(49, 62, 42, 1) 52%,
+    rgba(38, 45, 32, 1) 75%,
+    rgba(38, 45, 32, 1) 91%
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  color: var(--text-main);
+  font-family: Poppins;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-main);
+}
+
+/* Loader Styles */
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.loaderContainer .loader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 24px 48px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.258);
+}
+.loaderContainer .loader .spinner {
+  background-image: url('../images/FootballMediaLogo.png');
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Navbar Section */
+nav {
+  max-width: 1480px;
+  padding: 0 30px;
+  display: flex;
+  margin: 15px auto 0;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  background: rgba(255, 255, 255, 0.13);
+  border-radius: 30px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.8px);
+  -webkit-backdrop-filter: blur(11.8px);
+  border: 1px solid rgba(255, 255, 255, 0.36);
+}
+
+.navActive {
+  color: white;
+}
+
+nav .left {
+  display: flex;
+  align-items: center;
+}
+
+nav .left .text {
+  font-weight: bold;
+  color: var(--text-main);
+}
+
+nav .left .displayNone {
+  display: none;
+}
+
+nav .left .displayBlock {
+  display: block;
+}
+
+nav .left img {
+  width: 60px;
+}
+
+nav .left img:hover {
+  transform: translateX(195px);
+  transition: transform 1s ease-in-out;
+  cursor: pointer;
+}
+
+nav .center {
+  display: flex;
+  list-style-type: none;
+  font-weight: bold;
+  gap: 20px;
+}
+
+nav .center li {
+  color: var(--text-main);
+}
+
+nav .center li a:hover {
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+nav .right {
+  min-width: 80px;
+  height: 35px;
+  font-size: 1.2rem;
+  padding: 3px 5px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  background-color: transparent;
+  transition: transform 1s ease;
+}
+
+nav .right:hover {
+  transform: scale(1.1);
+}
+
+nav .right:active {
+  top: 2px;
+}
+
+nav .rightLogin {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+nav .rightLogin span {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+nav .rightLogin button {
+  min-width: 80px;
+  height: 35px;
+  color: #fff;
+  padding: 3px 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background-size: 120% auto;
+  background-image: linear-gradient(315deg, #c7082b 0%, #820000 95%);
+}
+
+nav .rightLogin button:hover {
+  background-position: right center;
+  transform: scale(0.9);
+  transition: transform 1s ease;
+}
+
+/* Footer Section */
+.wave {
+  width: 100%;
+  margin-bottom: -7px;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #0e1513;
+}
+
+.footerContainer .left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 8px;
+}
+
+.footerContainer .left .desc {
+  border-bottom: 2px solid #fc4308;
+  padding-bottom: 5px;
+}
+
+.footerContainer .left .footerLogo {
+  display: flex;
+  align-items: center;
+}
+
+.footerContainer .left .footerLogo p {
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+.footerContainer .left .footerLogo img {
+  margin-top: 1rem;
+  width: 3rem;
+  height: 3rem;
+  animation: bounce 1s infinite;
+}
+
+ul {
+  list-style-type: none;
+  line-height: 2rem;
+}
+
+ul :hover {
+  color: #fff;
+}
+
+.right .gifImage {
+  border-radius: 500px;
+}
+
+.copyRightContainer {
+  background-color: #0e1513;
+  padding: 20px 0px;
+}
+.copyRightContainer .copyRight {
+  width: fit-content;
+  margin: auto;
+  padding: 8px 12px;
+  color: #fc4308;
+  border-top: 2px solid #fc4308;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+}

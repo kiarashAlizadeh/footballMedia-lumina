@@ -1,0 +1,125 @@
+/* CSS for Followers Page */
+
+.container {
+  margin: 40px auto;
+  max-width: 700px;
+  min-height: 500px;
+  background: rgba(255, 255, 255, 0.21);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 35px;
+}
+
+.backBtnContainer {
+  width: 100%;
+}
+
+/* styles for back btn  */
+.backBtn {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 10px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  overflow: hidden;
+  border-radius: 5px;
+  border: none;
+  background-color: #343a40;
+}
+
+.backBtn:hover {
+  border-radius: 5px;
+  padding-right: 24px;
+  padding-left: 8px;
+}
+
+.backBtn:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+.backBtn:after {
+  content: '\00BB';
+  position: absolute;
+  opacity: 0;
+  font-size: 20px;
+  line-height: 40px;
+  top: 0;
+  right: -20px;
+  transition: 0.4s;
+}
+
+.followings {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.following {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  width: 400px;
+  padding: 5px 10px;
+}
+
+.profileImage {
+  width: 75px;
+}
+
+.unFollowBtn {
+  min-width: 100px;
+  height: 35px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 15px;
+  border: 2px solid #d90429;
+  background: #d90429;
+}
+
+.unFollowBtn:hover {
+  background: #fff;
+  color: #d90429;
+}
+
+.details {
+  display: flex;
+  color: black;
+}
+
+.userDetails {
+  display: flex;
+  flex-direction: column;
+}
+.userDetails .detailName {
+  font-weight: bold;
+  margin: 0px;
+}
+
+.userDetails .detailId {
+  font-size: 0.8rem;
+  opacity: 70%;
+}

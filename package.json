@@ -1,0 +1,33 @@
+{
+  "name": "footballMedia-lumina",
+  "version": "1.0.0",
+  "description": "Lumina is an fullStack SPA maker",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "concurrently \"nodemon server.js\" \"npx @tailwindcss/cli -i ./assets/css/index.css -o ./assets/css/tailwindOutput.css --watch\""
+  },
+  "type": "module",
+  "author": "Kiarash Alizadeh",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie": "^1.0.2",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "create-lumina": "^1.3.4",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.0.0",
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9",
+    "sass": "^1.83.4",
+    "tailwindcss": "^4.0.0"
+  }
+}

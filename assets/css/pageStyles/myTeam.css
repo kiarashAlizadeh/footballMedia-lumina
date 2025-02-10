@@ -1,0 +1,233 @@
+/* CSS for My Team Page */
+.container {
+  margin: auto;
+  max-width: 1600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.container .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+
+.container .head .teamName {
+  font-size: 2rem;
+  font-weight: 900;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  color: var(--text-secondary);
+  background-color: chocolate;
+}
+
+.container .head .logo {
+  font-size: 1.9rem;
+  font-weight: 900;
+}
+
+.container .head .logo span {
+  color: var(--text-secondary);
+}
+
+.container .teamInfo {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background-image: url('../../images/myTeamBackground.jpg');
+  border-radius: 30px;
+}
+
+.container .teamInfo .teamFormation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.2px);
+  -webkit-backdrop-filter: blur(9.2px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  height: 850px;
+  color: white;
+}
+
+.container .teamInfo .teamFormation .text {
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+.container .teamInfo .teamFormation img {
+  width: 380px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.container .teamInfo .teamFormation .teamPlayers .player {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  gap: 20px;
+}
+
+.container .teamInfo .teamFormation .teamPlayers .player .playerNumber {
+  color: var(--text-main);
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.container .teamInfo .teamDesc {
+  max-width: 670px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.2px);
+  -webkit-backdrop-filter: blur(9.2px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+}
+
+.container .teamInfo .teamDesc .title {
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: white;
+}
+
+.container .teamInfo .teamDesc .wikipedia {
+  width: 600px;
+  text-align: justify;
+  font-size: 1.1rem;
+  background-color: rgba(255, 255, 255, 0.064);
+  padding: 10px;
+  color: white;
+  border-radius: 3px;
+}
+
+.container .teamInfo .teamDesc .teamGallery {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container .teamInfo .teamDesc .teamGallery .text {
+  margin-top: 40px;
+  text-align: center;
+  color: white;
+  font-size: 2.2rem;
+}
+
+.teamGallery .images {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 4px;
+}
+
+.teamGallery .images .up {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.teamGallery .images img {
+  width: 280px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.container .teamSummery {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-image: url('../../images/greenGrass.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 300px;
+  padding: 10px;
+  height: 850px;
+  border-radius: 10px;
+}
+
+.container .teamSummery .teamLogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .teamSummery .teamLogo img {
+  width: 200px;
+  height: 200px;
+}
+
+.teamInfo .teamSummery .teamShortInfo {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.2px);
+  -webkit-backdrop-filter: blur(9.2px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  height: 250px;
+}
+
+.teamInfo .teamSummery .teamShortInfo .title .titleItem {
+  color: black;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.teamInfo .teamSummery .teamShortInfo .title,
+.teamInfo .teamSummery .teamShortInfo .value {
+  display: flex;
+  flex-direction: column;
+  color: aliceblue;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: 0.8rem;
+  height: 100%;
+}
+
+.teamInfo .teamSummery .teamPredictPage {
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.2px);
+  -webkit-backdrop-filter: blur(9.2px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+.teamInfo .teamSummery .teamPredictPage .text {
+  color: white;
+}
+
+.teamInfo .teamSummery .teamPredictPage .clickHere {
+  width: 250px;
+  border-radius: 10px;
+}

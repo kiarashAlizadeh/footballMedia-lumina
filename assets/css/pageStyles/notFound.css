@@ -1,0 +1,58 @@
+/* CSS for NotFound Page */
+main .container {
+  min-width: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: 80px auto;
+  background-color: #0e1513;
+  padding: 30px 50px;
+  border-radius: 20px;
+}
+
+main .notFoundImage {
+  border-radius: 30px;
+  height: 500px;
+}
+
+/* backToHome btn Styles */
+.backToHomeBtn {
+  margin-top: 10px;
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border: 1px solid #fc4308;
+  color: white;
+  background: transparent;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.backToHomeBtn:hover:after {
+  top: 0;
+  left: 0;
+}
+
+.backToHomeBtn:after {
+  content: '';
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 5px;
+  left: 5px;
+  transition: 0.2s;
+  background-color: #fc4308;
+  border-radius: 10px;
+}

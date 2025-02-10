@@ -1,0 +1,620 @@
+/* CSS for Profile Page */
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 100px;
+  margin: 40px auto;
+  padding: 20px 20px;
+  max-width: 1600px;
+}
+
+.container::after {
+  content: '';
+  position: fixed;
+  top: 170px;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../images/FootballMediaLogo.png');
+  background-size: 650px 650px;
+  background-position: right;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.container .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 25%;
+  border-radius: 20px;
+  background-color: #e3ae9a6e;
+  padding: 20px;
+}
+
+.container .right .image {
+  width: 257px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+
+.container .right .suggestions {
+  background-color: #fff;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 30px 20px;
+  gap: 15px;
+}
+
+.container .right .suggestions h3 {
+  margin: auto;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.container .right .suggestions .suggestionsUser {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .right .suggestions .suggestionsUser .userDetails {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75rem;
+  color: #000;
+}
+
+.details {
+  display: flex;
+}
+
+.detailName {
+  font-weight: bold;
+}
+
+.detailId {
+  font-size: 0.65rem;
+  opacity: 70%;
+}
+
+.container .right .suggestions .suggestionsUser .userImage {
+  width: 50px;
+}
+
+.followBtn {
+  margin-left: 10px;
+  min-width: 60px;
+  height: 25px;
+  color: #fff;
+  padding: 5px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 20px;
+  border: 2px solid #212529;
+  background: #212529;
+}
+
+.followBtn:hover {
+  background: #fff;
+  color: #212529;
+}
+
+.unFollowBtn {
+  margin-left: 10px;
+  min-width: 60px;
+  height: 25px;
+  color: #fff;
+  padding: 5px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 20px;
+  border: 2px solid #d61313;
+  background: #ca3232;
+}
+
+.unFollowBtn:hover {
+  background: #fff;
+  color: #be4242;
+}
+/* Share Profile Section Right */
+
+.right .shareProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 257px;
+  background-color: white;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 16px;
+  padding-left: 15px;
+}
+
+.right .shareProfile span {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: var(--text-main);
+  cursor: pointer;
+}
+
+.right .shareProfile img {
+  width: 150px;
+  cursor: pointer;
+}
+
+/* Bio Section */
+.container .left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  max-width: 75%;
+  border-radius: 20px;
+  background-color: #e3ae9a6e;
+  padding: 20px;
+}
+
+.left .bio {
+  display: flex;
+  gap: 40px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background: rgb(255, 255, 255);
+  border-radius: 16px;
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.left .bio .profileImg img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #fc4308;
+  object-fit: cover;
+}
+
+.left .bio .profileDesc {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.left .bio .profileDesc .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left .bio .profileDesc .text .name {
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.left .bio .profileDesc .text .id {
+  margin-top: -5px;
+  color: rgb(148, 148, 148);
+}
+
+.left .bio .profileDesc .stats {
+  display: flex;
+  font-weight: 700;
+  align-items: center;
+  margin-top: 10px;
+  color: black;
+  gap: 20px;
+}
+
+.left .bio .profileDesc .stats button {
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 900;
+  padding: 0;
+  cursor: pointer;
+}
+
+.left .bio .profileDesc .favoriteTeam {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.left .bio .profileDesc .favoriteTeam img {
+  width: 75px;
+  height: 75px;
+}
+
+.left .bio .profileDesc .desc {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.left .bio .profileDesc .desc p {
+  display: flex;
+  width: 400px;
+  color: #212529;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.left .bio .profileDesc .desc a {
+  color: rgb(241, 92, 38);
+  text-decoration: none;
+}
+
+.left .bio .profileDesc .desc a:active {
+  color: rgb(190, 190, 226);
+}
+
+/* Tweet Section */
+.tweets {
+  width: 100%;
+  height: 305px;
+  background: rgba(19, 55, 21, 0.22);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.tweets .tweetName {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: start;
+}
+
+.tweets .tweetName img {
+  width: 50px;
+  height: 50px;
+  margin-left: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.tweets .tweetName .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+.tweets .tweetName .text .name {
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.tweets .tweetName .text .id {
+  margin-top: -5px;
+  font-size: 0.9rem;
+}
+
+.tweeting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.tweeting textarea {
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 5px;
+  opacity: 85%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #000;
+  outline: none;
+  padding: 20px;
+  font-size: 1.1rem;
+  font-family: 'Poppins';
+  resize: none;
+}
+
+.tweeting textarea::placeholder {
+  color: white;
+  opacity: 90%;
+  font-size: 1.1rem;
+}
+
+.tweeting button {
+  min-width: 100px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 20px;
+  border: 2px solid #57cc99;
+  background: #57cc99;
+}
+
+.tweeting button:hover {
+  background: #fff;
+  color: #57cc99;
+}
+
+/* User Tweet Section */
+.userTweet {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  padding: 30px;
+  background: rgba(3, 49, 28, 0.749);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11px);
+  -webkit-backdrop-filter: blur(11px);
+  border: 1px solid rgba(252, 67, 8, 0.2);
+}
+
+.userTweet .userInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.userTweet .userInfo .tweetDelete {
+  background: transparent;
+  border: none;
+  color: red;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.userTweet .userInfo .tweetDelete:hover {
+  color: rgb(255, 42, 42);
+}
+
+.userTweet .userInfo .userInfoLink {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.userTweet .userInfo .userInfoLink img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.userTweet .userInfo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.userTweet .userInfo .userInfoLink .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  color: var(--text-secondary);
+}
+
+.userTweet .userInfo .userInfoLink .text .name {
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.userTweet .userInfo .userInfoLink .text .id {
+  margin-top: -5px;
+  font-size: 0.9rem;
+}
+
+.userTweet .userLastTweet {
+  width: 550px;
+  margin-top: 25px;
+  background-color: #0d210c2c;
+  color: var(--text-secondary);
+  border-radius: 10px;
+  max-width: fit-content;
+  padding: 10px;
+}
+
+.userTweet .userIntract {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.userTweet .userIntract div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.userTweet .userIntract .likes {
+  color: var(--text-secondary);
+}
+
+.userTweet .userIntract .comments {
+  margin-left: 20px;
+  color: var(--text-secondary);
+}
+
+.userTweet .userIntract .likes,
+.userTweet .userIntract .comments {
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 900;
+  padding: 0;
+  cursor: pointer;
+}
+
+.userIntract .likes i {
+  color: rgb(193, 2, 2);
+}
+
+.userTweet .userIntract .time {
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+/* Comments Section */
+.userComments {
+  background: rgba(61, 81, 56, 0.38);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(180, 163, 163, 0.1);
+  backdrop-filter: blur(11px);
+  -webkit-backdrop-filter: blur(11px);
+  border: 1px solid rgba(195, 167, 28, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 700px;
+  padding: 30px;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+}
+
+.userInfo input {
+  width: 450px;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 16px;
+  padding-left: 50px;
+  padding-right: 5px;
+  background: url('../images/profile.png') no-repeat left center;
+  background-size: 50px;
+  position: relative;
+  background-color: #ffffff33;
+  color: var(--text-secondary);
+  backdrop-filter: blur(11px);
+  -webkit-backdrop-filter: blur(11px);
+}
+
+.userInfo input::placeholder {
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #afabab;
+  color: var(--text-secondary);
+}
+
+.commentsSection {
+  margin-top: 70px;
+}
+
+.commentsSection h4 {
+  max-width: fit-content;
+  background-color: rgb(17, 60, 16);
+  border-radius: 5px;
+  padding: 2px 7px;
+}
+
+.commentsSection .comment {
+  display: flex;
+  flex-direction: column;
+  border-top: 3px solid rgb(23, 58, 0);
+  margin-top: 20px;
+}
+
+.commentsSection .comment .userInfo {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.othersComment {
+  display: flex;
+  justify-content: space-between;
+}
+
+.commentsSection .comment p {
+  background-color: rgba(80, 144, 69, 0.933);
+  color: #ece6e6;
+  width: 400px;
+  border-radius: 5px;
+  display: flex;
+  margin-top: 10px;
+  max-width: fit-content;
+  overflow: auto;
+  padding: 1px 10px;
+}
+
+.othersComment button {
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 900;
+  padding: 0;
+  cursor: pointer;
+  color: white;
+}
+
+.othersComment button i {
+  color: red;
+}
+
+#comment {
+  margin-top: 30px;
+}
+
+.commentBtn {
+  min-width: 100px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 20px;
+  border: 2px solid #57cc99;
+  background: #57cc99;
+}
+
+.commentBtn:hover {
+  background: #fff;
+  color: #57cc99;
+}
