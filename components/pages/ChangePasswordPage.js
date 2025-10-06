@@ -63,8 +63,8 @@ async function ChangePasswordPage() {
         const data = await res.json();
         if (res.status === 201) {
           alert('your Password has been changed, please sign In again');
-          const resSignOut = await fetch('http://localhost:3000/api/signOut', {
-            method: 'Get',
+          const resSignOut = await fetch('http://localhost:3000/api/auth', {
+            method: 'PATCH',
             credentials: 'include',
             headers: { 'Content-Type': 'application/json' },
           });

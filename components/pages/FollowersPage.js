@@ -45,8 +45,8 @@ async function FollowersPage() {
 
   window.removeHandler = async function (userId) {
     // remove user
-    const up = await fetch('http://localhost:3000/api/unFollow', {
-      method: 'POST',
+    const up = await fetch('http://localhost:3000/api/follow', {
+      method: 'DELETE',
       body: JSON.stringify({
         reqId: id,
         userId,

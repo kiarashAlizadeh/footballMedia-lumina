@@ -23,8 +23,8 @@ async function Header() {
   };
 
   window.logOutHandler = async function () {
-    const resSignOut = await fetch('http://localhost:3000/api/signOut', {
-      method: 'Get',
+    const resSignOut = await fetch('http://localhost:3000/api/auth', {
+      method: 'PATCH',
       credentials: 'include',
       headers: { 'Content-Type': 'application/json' },
     });

@@ -95,8 +95,8 @@ async function ProfilePage() {
 
   window.unFollowHandler = async function (reqId) {
     // unFollow user
-    const up = await fetch('http://localhost:3000/api/unFollow', {
-      method: 'POST',
+    const up = await fetch('http://localhost:3000/api/follow', {
+      method: 'DELETE',
       body: JSON.stringify({
         reqId,
         userId: user.userId,

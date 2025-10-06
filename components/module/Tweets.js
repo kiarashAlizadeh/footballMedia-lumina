@@ -110,8 +110,8 @@ async function Tweets(id) {
     const tweetId = button.getAttribute('data-tweet-id');
     const commentIndex = button.getAttribute('data-comment-id');
     // like comment
-    const up = await fetch('http://localhost:3000/api/likeComment', {
-      method: 'POST',
+    const up = await fetch('http://localhost:3000/api/like', {
+      method: 'PATCH',
       body: JSON.stringify({
         tweetId,
         commentIndex,
@@ -146,8 +146,8 @@ async function Tweets(id) {
     const tweetId = button.getAttribute('data-tweet-id');
     const commentIndex = button.getAttribute('data-comment-id');
     // like tweet
-    const up = await fetch('http://localhost:3000/api/deleteComment', {
-      method: 'POST',
+    const up = await fetch('http://localhost:3000/api/comment', {
+      method: 'DELETE',
       body: JSON.stringify({
         tweetId,
         commentIndex,
